@@ -4,12 +4,15 @@ var homeSwiper = new Swiper(".home-swiper", {
     centeredSlides: true,
     slidesPerView: "auto",
     loop: true, 
+    autoplay: {
+        delay: 2000, 
+        disableOnInteraction: false, 
+    },
     pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+        el: ".swiper-pagination",
+        clickable: true, 
     },
 });
-/*--------------------*/
 
 /*---------- about buttons ----------*/
 const tabs = document.querySelectorAll('[data-target]');
